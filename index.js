@@ -10,10 +10,6 @@ app.get('/', function(req, res){
 	res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/scripts.js', function(req, res){
-	res.sendFile(__dirname + '/scripts.js');
-});
-
 var users = [];
 
 io.on('connection', function(socket){
